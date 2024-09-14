@@ -185,6 +185,6 @@ const prompt=require("prompt-sync")({sigint:true});
 // console.log(myCar.show());
 
 //Exports Modules with functions or variables can be stored in any external file.
-var msg=require("./message.js");
+// var msg=require("./message.js");
 
-console.log(msg.name);
+// console.log(msg.name);
