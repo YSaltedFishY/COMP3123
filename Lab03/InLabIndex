@@ -1,0 +1,121 @@
+//Importing http module
+var http=require('http');
+
+// //creating http Server
+// http.createServer(function (req, res){
+//     //*** send the HTTP header ***/
+//     /* the `response.writeHead()` property, introducedin node.js
+
+//     is part of the 'http' module. it is used to send a response header
+//     to the incoming request. the status code represents a 3-digit HTTP
+//     status code(e.g., 404), and the header parameter contains the response headers.
+//     optionally a human readable status Message 
+//         //HTTP Status Code (200):It accepts the status code that are of number type.
+//         //Content Type (text/plain):Is string format (accepts 'text/html' or application/json;char)
+//         //Calling reponse.writeHead method
+//     */
+//    res.writeHead(200, {'Content-Type': 'text/plain'});
+//    //Send the response body as hello world
+//    res.end('hello world!');
+
+// }).listen(8080);
+
+// console.log('Server running at http://127.0.0.1:8080/');
+
+// //---------------------------------Example 2---------------------------------------------------------
+// //Setting up port oustide server
+// //Whatever is in the environment variable PORT2, or 3000 if there's nothing there.
+// const PORT2 = process.env.PORT || 3000;
+
+// var httpserver2 = http.createServer(
+//     function(req,res){
+//         const body = 'hello COMP3123';
+
+//         //Calling response.writeHead method
+//         res.writeHead(200, {'Content-Type': 'text/html'});
+//         //Send the response body as Hello World!
+//         res.end(body);
+//     });
+
+//     // Listening to http Server (assigning the port to the server)
+//     httpserver2.listen(PORT2,
+//         ()=> {
+//             console.log("Server running at http://127.0.0.1:3000/");
+//         });
+
+// //-----------------------------------------------------------------------------------------------------
+// const PORT3 = process.env.PORT || 2020;
+
+// var httpserver3 = http.createServer(
+//     function(req,res){
+//         const body = 'hello COMP3123';
+
+//         //Calling response.writeHead method
+//         res.writeHead(200, {'Content-Type': 'text/html'});
+//         //Send the response body as Hello World!
+//         res.end(body);
+//     });
+
+// //Using URLs (under req parameter) and display JS objects on the server
+// myCars = ['Mazda','BMW','Toyota','Ford']
+
+// http.createServer(function (req,res){
+//     //req.url returns the request url for any request made to it.
+//     if(req.url=="/"){
+//         res.writeHead(200,{'Content-Type':'text/html'});
+//         res.end('Welcome');
+//     }
+//     //if http://127.0.0.1:8082/hello
+//     //Send the response body as "<h1>Hello World!</h1>"
+//     if(req.url=="/hello"){
+//         res.writeHead(200,{'Content-Type':'text/html'});
+//         res.end('<h1>Hello World!<h1>');
+//     }
+
+//     if(req.url=="/name"){
+//         res.writeHead(200,{'Content-Type':'text/html'});
+//         res.end('<h1>HaoYun<h1>');
+//     }
+
+//     if(req.url=="/carssort"){
+//         res.setHeader('Content-Type','application/json;charset=utf-8');
+//         myCars=myCars.sort();
+//         return res.end(JSON.stringify(myCars));
+//     }
+
+//     if(req.url=="/carsrev"){
+//         res.setHeader('Content-Type','application/json;charset=utf-8');
+//         myCars.reverse();
+//         return res.end(JSON.stringify(myCars));
+//     }
+
+// }).listen(8082)
+// console.log('Server running at http://127.0.0.1:8082/');
+
+// //--------------------------------------------------------------------------------
+// let person = [
+//     {id:1,firstName:"John",lastName:"Doe",age:40,job:"IT"},
+//     {id:2,firstName:"Smith",lastName:"Doe",age:25,job:"IT"},
+//     {id:3,firstName:"Sherry",lastName:"Doe",age:16,job:"IT"},
+//     {id:4,firstName:"Mary",lastName:"Doe",age:70,job:"Ir"}
+// ]
+
+// const PORT4 = process.env.PORT || 8082
+
+// const httpServer4 = http.createServer(function (req,res){
+//     if(req.method !== 'GET'){
+//         res.end(`{"Error": "${http.STATUS_CODES[405]}"}`)
+//     }else{
+//         if(req.url ==='/'){
+//             res.end("<h1>Hello world</h1>");
+//         }
+
+//         if(req.url === '/users'){
+//             res.setHeader('Content-Type', 'application/json;charset=utf-8');
+//             return res.end(JSON.stringify(person));
+//         }
+
+//     }
+// }).listen(8082)
+
+//-----------------------------------------------------

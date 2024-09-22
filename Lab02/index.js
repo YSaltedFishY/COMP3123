@@ -188,3 +188,14 @@ const prompt=require("prompt-sync")({sigint:true});
 // var msg=require("./message.js");
 
 // console.log(msg.name);
+
+var msg=require("./message.js");
+
+console.log(msg.name);
+console.log(msg.sum(5,3));
+console.log(msg.myCars);
+console.log(msg.myCars[1]);
+let mycar = new msg.car("Mazda");
+console.log(mycar.model());
+let myage = new msg.myClass(24);
+console.log(myage.Age);
