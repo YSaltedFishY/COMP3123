@@ -1,0 +1,22 @@
+Instructions
+ Create a ZIP file and GitHub repository having the name StudentID_COMP3123-exec04.zip. Also, upload screenshots showing output or any errors.
+
+Create an express JS application having the name StudentID_COMP3123-exec04
+Submit the GitHub repo link
+Add the express framework and nodemon to package.json
+Create a route for the following endpoints 
+A GET request to /hello that returns "Hello Express JS".
+A GET request to /user with query parameters for firstname and lastname.
+A POST request to /user with path parameters for firstname and lastname.
+Explanation:
+GET /hello:
+
+Returns "Hello Express JS" as plain text.
+GET /user:
+
+This uses query string parameters (?firstname=value&lastname=value). If the parameters are not provided, it defaults to "Pritesh" and "Patel".
+Example: GET /user?firstname=John&lastname=Doe returns {"firstname":"John","lastname":"Doe"}.
+POST /user:
+
+This expects path parameters for firstname and lastname.
+Example: POST /user/John/Doe returns {"firstname":"John","lastname":"Doe"}.
