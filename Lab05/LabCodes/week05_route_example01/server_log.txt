@@ -1,0 +1,23 @@
+[Monday, October 5th, 2020, 5:17:03 PM] - /book
+[Monday, October 5th, 2020, 5:18:38 PM] - /book
+[Monday, October 5th, 2020, 5:18:43 PM] - /book
+[Monday, October 5th, 2020, 5:18:48 PM] - /book
+[Monday, October 5th, 2020, 5:19:46 PM] - /book
+[Monday, October 5th, 2020, 5:23:02 PM] -[GET] - /book
+[Monday, October 5th, 2020, 5:23:09 PM] -[PUT] - /book
+[Monday, October 5th, 2020, 5:23:12 PM] -[POST] - /book
+[Monday, October 5th, 2020, 5:23:15 PM] -[GET] - /book
+[Monday, October 5th, 2020, 5:30:01 PM] -[GET] - /book
+[Monday, October 5th, 2020, 5:30:13 PM] -[GET] - /
+[Monday, October 5th, 2020, 5:30:24 PM] -[GET] - /book/computer
+[Monday, October 5th, 2020, 5:30:36 PM] -[GET] - /book/computer/devops
+[Monday, October 5th, 2020, 5:31:17 PM] -[GET] - /book/computer/devops
+[Monday, October 5th, 2020, 5:45:54 PM] -[GET] - /book/computer/devops
+[Monday, October 5th, 2020, 5:46:07 PM] -[GET] - /book/computer/fullstack
+[Monday, October 5th, 2020, 5:46:18 PM] -[POST] - /book/computer/fullstack
+[Monday, October 5th, 2020, 5:49:17 PM] -[POST] - /book/computer/fullstack
+[Monday, October 5th, 2020, 5:49:23 PM] -[POST] - /book/computer/devops
+[Monday, October 5th, 2020, 5:49:30 PM] -[GET] - /book/computer/devops
+[Monday, October 5th, 2020, 5:52:32 PM] -[GET] - /book/health/brain
+[Monday, October 5th, 2020, 5:52:40 PM] -[GET] - /book/health/lungs
+[Monday, October 5th, 2020, 5:52:44 PM] -[POST] - /book/health/lungs

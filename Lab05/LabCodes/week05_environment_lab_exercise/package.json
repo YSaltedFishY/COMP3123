@@ -1,0 +1,25 @@
+{
+  "name": "week05_tue_lab_exercise",
+  "version": "1.0.0",
+  "description": "Week05 Express Route Example",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=8081 node index.js",
+    "dev": "PORT=8082 nodemon index.js",
+    "test1": "NODE_ENV=test1 nodemon index.js",
+    "uat": "NODE_ENV=uat nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Pritesh Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  }
+}
