@@ -1,69 +1,17 @@
-let mongoose = require('mongoose')
+const express = require('express');
+const router = express.Router();
+const path = require('path')
 
-const UserSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true,
-        unique: true
-    },
-    email: {
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true,
-        unique: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
-    created_at: Date,
-    updated_at: Date
-})
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 
-const EmployeeSchema = new mongoose.Schema({
-    firstname:{
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true
-    },
-    lastname:{
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true
-    },
-    email: {
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true,
-        unique: true
-    },
-    position: {
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true,
-    },
-    Salary: Number,
-    date_of_joining: Date,
-    department:{
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true
-    },
-    created_at: Date,
-    updated_at: Date
-
-})
-
-const User = mongoose.model("users",UserSchema)
-const Employee = mongoose.model("employees",EmployeeSchema)
-
-model.exports = User
-model.exports = Employee
+// app.get("employees", async(req,res)=>{
+//     const emp = await employeeModel.find(
+//         {total:{$gt:100}},"first_name total").sort({total:-1})
+//     try{
+//         res.send(emp)
+//     }catch(err){
+//         console.log("Error: " + err)
+//         res.status(500).send(err)
+//     }
+// })
